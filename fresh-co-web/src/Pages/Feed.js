@@ -1,5 +1,5 @@
 import ProductCard from '../Components/ProductCard.js';
-import "./Feed.css";
+
 
 
 function BasicExample() {
