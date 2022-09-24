@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
+
 export default function ProductCard({
   Nombre,
   Precio,
@@ -9,7 +10,9 @@ export default function ProductCard({
   Descripcion,
   CantidadPrecioKilos,
   CantidadExistenteKilos,
-}) {
+}) 
+
+{
   return (
     <Card>
       <Card.Img variant="left" src={ImagenUrl} />
