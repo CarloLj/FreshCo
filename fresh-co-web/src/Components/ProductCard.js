@@ -10,21 +10,24 @@ export default function ProductCard({
   Descripcion,
   CantidadPrecioKilos,
   CantidadExistenteKilos,
-}) 
-
-{
+}) {
   return (
-    <Card style={{ width: '24rem' }}>
-        <Card.Img variant= "top" src={ImagenUrl} class="img-fluid" alt="Responsive image" />
-        <Card.Body>
-          <Card.Title>{Nombre}</Card.Title>
-          <Card.Text>{Descripcion}</Card.Text>
-          <Card.Text>
-            Precio = ${Precio} por {CantidadPrecioKilos} Kilos. Quedan{" "}
-            {CantidadExistenteKilos} de kilos de este producto.
-          </Card.Text>
-          <Button variant="primary">+</Button>
-        </Card.Body>
+    <Card style={{ width: "24rem" }}>
+      <Card.Img
+        variant="top"
+        src={ImagenUrl}
+        className="Card"
+        alt="Responsive image"
+      />
+      <Card.Body>
+        <Card.Title>{Nombre}</Card.Title>
+        <Card.Text>{Descripcion}</Card.Text>
+        <Card.Text>
+          Precio = ${Precio} por {CantidadPrecioKilos} Kilos. Quedan{" "}
+          {CantidadExistenteKilos} de kilos de este producto.
+        </Card.Text>
+        <Button variant="primary">+</Button>
+      </Card.Body>
     </Card>
   );
 }
