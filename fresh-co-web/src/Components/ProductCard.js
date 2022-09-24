@@ -15,7 +15,7 @@ export default function ProductCard({
 {
   return (
     <Card>
-      <Card.Img variant="left" src={ImagenUrl} />
+      <Card.Img class="col-md-12 row" variant="top" src={ImagenUrl} />
       <Card.Body>
         <Card.Title>{Nombre}</Card.Title>
         <Card.Text>{Descripcion}</Card.Text>
