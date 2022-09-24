@@ -1,19 +1,17 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import ProductCard from '../Components/ProductCard.js';
 
 function BasicExample() {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+    <div>
+        <ProductCard 
+            Nombre = "Tomate"
+            Precio = "20"
+            ImagenURL = "https://gumlet.https://via.placeholder.com/50://via.placeholder.com/50.com/https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FTomate&psig=AOvVaw0npDBFAWSxRZ942fBFYZqT&ust=1664146177494000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJiJteDBrvoCFQAAAAAdAAAAABAD%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"
+            Descripcion = "Tomate verde organico"
+            CantidadPrecioKilos = "1"
+            CantidadExistenteKilos = "100"
+        />
+    </div>
   );
 }
 
