@@ -13,19 +13,18 @@ export default function ProductCard({
 
 {
   return (
-    <div>
-        
-        <img src={ImagenUrl} alt="PlaceHolder" className="ImgPlot"></img>
-            <div className="cardProduct">
-                <h2>{Nombre}</h2>
-                <h4>{Locacion}</h4>
-                <h6>{Descripcion}</h6>
+    <Card style={{ width: '18rem', }}>
+        <Card.Img variant="top" src={ImagenUrl} />
+            <Card.Body>
+            <Card.Title>{Nombre}</Card.Title>
+                <Card.Text>{Locacion}</Card.Text>
+                <Card.Text>{Descripcion}</Card.Text>
                 <div className="rating">
                     <h6 className="a">Rating </h6>
                     <h6 className="b">{Rating} / 5</h6>
                 </div>
-            </div>
-    </div>
+            </Card.Body>
+    </Card>
     
   );
 }

@@ -1,5 +1,5 @@
 import DetailsCard from '../Components/DetailsCard';
-
+import ProductCard from '../Components/ProductCard';
 
 
 function BasicExample() {
@@ -11,12 +11,17 @@ function BasicExample() {
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
         </div>
-        <DetailsCard 
-        Nombre={"Villa Bonita"}
-        Locacion={"Monterrey, Mexico"}
-        Descripcion={"Productos sembrados de calidad de la familia becerra"}
-        ImagenUrl={"https://img.europapress.es/fotoweb/fotonoticia_20190730113811_420.jpg"}
-        Rating={"4"}/>
+        <ProductCard
+          Nombre = "Tomate"
+          Descripcion = "Tomate verde Organico"
+          Precio = "20"
+          ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
+
+            
+            
+
+        
+
     </div>
   );
 }
