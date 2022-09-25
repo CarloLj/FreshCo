@@ -20,7 +20,7 @@ export default function ProductCard({
         <div class="w-full p-1 md:p-2">
           <GridCards          
             Nombre = "Tomate"
-            Descripcion = "Tomate verde Organico, plantado con buen cuidado y buscando la mayor calidad"
+            Tipo = "Sierreño"
             Precio = "20"
             Cantidad = "21"
             ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
@@ -31,7 +31,7 @@ export default function ProductCard({
         <div class="w-full p-1 md:p-2">
         <GridCards          
             Nombre = "Tomate"
-            Descripcion = "Tomate verde Organico, plantado con buen cuidado y buscando la mayor calidad"
+            Tipo = "Sierreño"
             Precio = "20"
             Cantidad = "21"
             ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
@@ -41,17 +41,17 @@ export default function ProductCard({
         <div class="w-full p-1 md:p-2">
         <GridCards          
             Nombre = "Tomate"
-            Descripcion = "Tomate verde Organico, plantado con buen cuidado y buscando la mayor calidad"
+            Tipo = "Sierreño"
             Precio = "20"
             Cantidad = "21"
-            ImagenUrl = "https://agromerca.com/wp-content/uploads/2020/11/tomate-beef-1.jpg"/>
+            ImagenUrl = "https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg"/>
         </div>
       </div>
       <div class="flex flex-wrap w-1/2">
         <div class="w-full p-1 md:p-2">
         <GridCards          
             Nombre = "Tomate"
-            Descripcion = "Tomate verde Organico, plantado con buen cuidado y buscando la mayor calidad"
+            Tipo = "Sierreño"
             Precio = "20"
             Cantidad = "21"
             ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
