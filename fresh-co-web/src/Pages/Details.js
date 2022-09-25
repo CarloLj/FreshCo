@@ -1,18 +1,14 @@
 import DetailsCard from '../Components/DetailsCard';
 import ProductCard from '../Components/ProductCard';
 import ProductGrid from '../Components/ProductGrid';
+import Header from '../Components/Header';
 
 function BasicExample() {
   return (
     <div>
-        <div class="topnav" >
-            <a class="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-        </div>
+        <Header/>
         <center>
-          <div class="	inline-block "> 
+          <div class="inline-block"> 
             <DetailsCard
               Nombre="Villa Bonita"
               Locacion="Monterrey, Mexico"
@@ -26,14 +22,6 @@ function BasicExample() {
             
           </div>
         </center>
-        
-        
-
-        
-            
-
-        
-
     </div>
   );
 }
