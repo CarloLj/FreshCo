@@ -4,12 +4,14 @@ import "./App.css";
 import Feed from "./Pages/Feed";
 import Details from "./Pages/Details";
 import About from "./Pages/About";
+import Start from "./Pages/Start";
 
 function App() {
   return (
     <Router>
         <Fragment>
             <Routes>
+                <Route exact path='/' element = {<Start/>}/>
                 <Route exact path='/Feed' element = {<Feed/>}/>
                 <Route exact path='/Details' element = {<Details/>}/>
                 <Route exact path='/About' element = {<About/>}/>
