@@ -15,9 +15,9 @@ export default function ProductCard({
   return (
     <section class="overflow-hidden text-gray-700 ">
   <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
-    <div class="flex flex-wrap -m-1 md:-m-2">
+    <div class="flex flex-wrap -m-1 sm:-m-2">
       <div class="flex flex-wrap w-1/2">
-        <div class="w-full p-1 md:p-2">
+        <div class="w-full p-1 sm:p-2">
           <GridCards          
             Nombre = "Tomate"
             Tipo = "Sierreño"
@@ -28,7 +28,7 @@ export default function ProductCard({
       </div>
 
       <div class="flex flex-wrap w-1/2">
-        <div class="w-full p-1 md:p-2">
+        <div class="w-full p-1 sm:p-2">
         <GridCards          
             Nombre = "Tomate"
             Tipo = "Sierreño"
@@ -38,7 +38,7 @@ export default function ProductCard({
         </div>
       </div>
       <div class="flex flex-wrap w-1/2">
-        <div class="w-full p-1 md:p-2">
+        <div class="w-full p-1 sm:p-2">
         <GridCards          
             Nombre = "Tomate"
             Tipo = "Sierreño"
@@ -48,7 +48,7 @@ export default function ProductCard({
         </div>
       </div>
       <div class="flex flex-wrap w-1/2">
-        <div class="w-full p-1 md:p-2">
+        <div class="w-full p-1 sm:p-2">
         <GridCards          
             Nombre = "Tomate"
             Tipo = "Sierreño"
