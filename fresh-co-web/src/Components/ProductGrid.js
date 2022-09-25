@@ -44,7 +44,7 @@ export default function ProductCard({
             Descripcion = "Tomate verde Organico, plantado con buen cuidado y buscando la mayor calidad"
             Precio = "20"
             Cantidad = "21"
-            ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
+            ImagenUrl = "https://agromerca.com/wp-content/uploads/2020/11/tomate-beef-1.jpg"/>
         </div>
       </div>
       <div class="flex flex-wrap w-1/2">

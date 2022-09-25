@@ -5,21 +5,31 @@ import ProductGrid from '../Components/ProductGrid';
 function BasicExample() {
   return (
     <div>
-        <div class="topnav">
+        <div class="topnav" >
             <a class="active" href="#home">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
         </div>
-        <ProductCard
-          Nombre = "Tomate"
-          Descripcion = "Tomate verde Organico, plantado con buen cuidado y buscando la mayor calidad"
-          Precio = "20"
-          Cantidad = "21"
-          ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
-
-        <ProductGrid></ProductGrid>
+        <center>
+          <div class="	inline-block "> 
+            <DetailsCard
+              Nombre="Villa Bonita"
+              Locacion="Monterrey, Mexico"
+              Descripcion="Productos sembrados de calidad de la familia becerra"
+              >
+            </DetailsCard>
+            <div class="translate-y-10">
+              <ProductGrid >
+              </ProductGrid> 
+            </div>
             
+          </div>
+        </center>
+        
+        
+
+        
             
 
         
