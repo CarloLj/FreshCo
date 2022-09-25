@@ -1,5 +1,6 @@
 const express = require('express'); 
 const admin = require('firebase-admin');
+const bp = require("body-parser");
 
 const PORT = process.env.PORT || 3001;
 
@@ -16,6 +17,9 @@ const db = admin.database();
 var vendedorRef=db.ref("vendedores");
 
 const app = express();
+app.use(express.json());
+app.use(bp.json());
+app.use(bp.urlencoded({ extended: true }));
 
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
@@ -49,7 +53,7 @@ app.get("/getVendedores", (req,res) => {
             data = snap.val();
 
             const clearNullVendor = data.filter(element => {
-                delete element.contra
+                delete element.contra;
                 return element !== null;
             })
 
@@ -70,3 +74,32 @@ app.get("/getVendedores", (req,res) => {
     }
 
 });
+
+app.post('/buyCart', (req,res) => {
+
+    try {
+        const {vID,pID,cantidad} = req.body;
+
+        var new_ref = db.ref(`vendedores/${vID}/parcela/Productos/${pID}/CantidadExistenteKilos`);
+
+        new_ref.once('value',function(snap) {
+            
+            prev_cantidad = snap.val()
+            
+            if(prev_cantidad >= cantidad) {
+                new_ref.set(prev_cantidad-cantidad);
+                res.json({message:"Updated Inventory"});
+            }else{
+                res.json({message:"Not enough items in the inventory"});
+            }
+
+        });
+
+    } catch (error) {
+        res.status(400).json({message: "Bad Request"});
+    }
+    
+
+})
+
+
