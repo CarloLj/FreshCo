@@ -38,12 +38,12 @@ function BasicExample() {
                   </p>
                   </p>
 
-                  <p class = "font-bold text-xl inline-block"> Sin <p class = "text-orange-800 inline-block"> intermediarios </p>
+                  <p class = "font-bold text-xl inline-block"> Más <p class = "text-orange-800 inline-block"> Ganacias </p>
                   <p class=" font-normal">
-                      Los intermediarios suben el precio de  <br>
-                      </br> la comida, gastan gasolina extra y  <br>
-                      </br> no tienen control sobre la comida <br>
-                      </br> desperdiciada.
+                      Los productores tienen la garantía  <br>
+                      </br> de que su consecha será consumida,  <br>
+                      </br> aumentando la eficienia  y<br>
+                      </br> reduciendo perdidas
                   </p>
                   </p>
               </div>
