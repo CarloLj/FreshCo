@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
+import ProductCard from './ProductCard';
 
 const FeedCard = ({card}) => {
     console.log(card)
@@ -10,14 +11,16 @@ const FeedCard = ({card}) => {
     const listProducts = Productos.map((producto) => {
         return (
             <div key={producto["Nombre"]} className='m-2 inline-block'>
-                <img
-                    className="w-24 h-24 rounded-full inline-block"
-                    src={producto["ImagenUrl"]}
-                    alt=""
-                    width="384"
-                    height="512"
-                />
-                <p>{producto["Nombre"]}</p>
+                <center>
+                    <ProductCard
+                    Nombre={producto["Nombre"]}
+                    Precio={producto["Precio"]}
+                    ImagenUrl={producto["ImagenUrl"]}
+                    Descripcion={producto["Descripcion"]}
+                    CantidadPrecioKilos={producto["CantidadPrecioKilos"]}
+                    CantidadExistenteKilos={producto["CantidadExistenteKilos"]} />
+                </center>
+                
             </div>
         )
     });

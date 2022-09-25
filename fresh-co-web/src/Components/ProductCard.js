@@ -7,8 +7,8 @@ export default function ProductCard({
   Nombre,
   Precio,
   ImagenUrl,
-  Tipo,
-  Cantidad
+  Descripcion,
+  CantidadExistenteKilos
 }) 
 
 {
@@ -20,10 +20,10 @@ export default function ProductCard({
         
         <div class="p-6 flex flex-col justify-start">
           <h3 class="text-gray-900 text-2xl font-medium mb-2 text-left -translate-y-3">{Nombre}</h3>
-          <p class="text-gray-900 text-sm font-medium mb-2 text-left translate-x-2 -translate-y-5">{Tipo}</p>
+          <p class="text-gray-900 text-sm font-medium mb-2 text-left translate-x-2 -translate-y-5">{Descripcion}</p>
 
           <p class="  -translate-x-2 font-normal txt-xs translate-y-3 text-gray-600 text-base">Precio Total: {Precio} $ / Kg
-            <p class=" whitespace-pre txt-xs inline-block text-gray-600 text-base">                       Stock: {Cantidad} T</p></p>
+            <p class=" whitespace-pre txt-xs inline-block text-gray-600 text-base">                       Stock: {CantidadExistenteKilos} T</p></p>
           
         </div>
       </div>

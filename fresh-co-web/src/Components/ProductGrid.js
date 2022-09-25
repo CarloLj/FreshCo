@@ -20,9 +20,9 @@ export default function ProductCard({
         <div class="w-full p-1 sm:p-2">
           <GridCards          
             Nombre = "Tomate"
-            Tipo = "Sierreño"
+            Descripcion = "Sierreño"
             Precio = "20"
-            Cantidad = "21"
+            CantidadExistenteKilos = "21"
             ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
         </div>
       </div>
@@ -31,9 +31,9 @@ export default function ProductCard({
         <div class="w-full p-1 sm:p-2">
         <GridCards          
             Nombre = "Tomate"
-            Tipo = "Sierreño"
+            Descripcion = "Sierreño"
             Precio = "20"
-            Cantidad = "21"
+            CantidadExistenteKilos = "21"
             ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
         </div>
       </div>
@@ -41,9 +41,9 @@ export default function ProductCard({
         <div class="w-full p-1 sm:p-2">
         <GridCards          
             Nombre = "Tomate"
-            Tipo = "Sierreño"
+            Descripcion = "Sierreño"
             Precio = "20"
-            Cantidad = "21"
+            CantidadExistenteKilos = "21"
             ImagenUrl = "https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg"/>
         </div>
       </div>
@@ -51,9 +51,9 @@ export default function ProductCard({
         <div class="w-full p-1 sm:p-2">
         <GridCards          
             Nombre = "Tomate"
-            Tipo = "Sierreño"
+            Descripcion = "Sierreño"
             Precio = "20"
-            Cantidad = "21"
+            CantidadExistenteKilos = "21"
             ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
         </div>
       </div>
