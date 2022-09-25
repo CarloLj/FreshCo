@@ -8,7 +8,7 @@ export default function ProductCard({
   Precio,
   ImagenUrl,
   Descripcion,
-  Rating
+  Cantidad
 }) 
 
 {
@@ -21,7 +21,9 @@ export default function ProductCard({
           <p class="text-gray-700 text-base mb-4">
             {Descripcion}
           </p>
-          <p class="text-gray-600 text-base">Precio Total: {Precio} $</p>
+          <p class=" font-bold translate-y-10 text-gray-600 text-base">Precio Total: {Precio} $ / Kg
+            <p class=" whitespace-pre inline-block text-gray-600 text-base">       Stock: {Cantidad} T</p></p>
+          
         </div>
       </div>
     </div>

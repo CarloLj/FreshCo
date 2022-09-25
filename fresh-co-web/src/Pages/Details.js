@@ -1,6 +1,6 @@
 import DetailsCard from '../Components/DetailsCard';
 import ProductCard from '../Components/ProductCard';
-
+import ProductGrid from '../Components/ProductGrid';
 
 function BasicExample() {
   return (
@@ -13,10 +13,12 @@ function BasicExample() {
         </div>
         <ProductCard
           Nombre = "Tomate"
-          Descripcion = "Tomate verde Organico"
+          Descripcion = "Tomate verde Organico, plantado con buen cuidado y buscando la mayor calidad"
           Precio = "20"
+          Cantidad = "21"
           ImagenUrl = "https://gumlet.assettype.com/mimorelia%2Fimport%2F2018%2F05%2Fgrid-noticias%2Fmichoacan-salud%2F11%2Ftomate.jpg"/>
 
+        <ProductGrid></ProductGrid>
             
             
 
