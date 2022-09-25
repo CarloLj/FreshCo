@@ -1,6 +1,4 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import GridCards from './ProductCard';
 
 export default function ProductCard({

@@ -1,6 +1,3 @@
-import DetailsCard from '../Components/DetailsCard';
-import ProductCard from '../Components/ProductCard';
-import ProductGrid from '../Components/ProductGrid';
 import Header from '../Components/Header';
 
 function BasicExample() {
