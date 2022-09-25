@@ -9,7 +9,8 @@ export default function ProductCard({
   Precio,
   ImagenUrl,
   Descripcion,
-  CantidadExistenteKilos
+  CantidadExistenteKilos,
+  IdParcela
 }) 
 
 {
@@ -28,7 +29,7 @@ export default function ProductCard({
           
         </div>
       </div>
-      <Link to="/Details">
+      <Link to={"/Details/" + IdParcela}>
         <button type="button" class="text-center text-xl w-full sm:w-12 h-12 -translate-x-6 translate-y-12 bg-green-500 text-white  uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out">+</button>
       </Link>
     </div>

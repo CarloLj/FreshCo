@@ -13,7 +13,7 @@ function App() {
             <Routes>
                 <Route exact path='/' element = {<Start/>}/>
                 <Route exact path='/Feed' element = {<Feed/>}/>
-                <Route exact path='/Details' element = {<Details/>}/>
+                <Route exact path='/Details/:idParcela' element = {<Details/>}/>
                 <Route exact path='/About' element = {<About/>}/>
             </Routes>
         </Fragment>

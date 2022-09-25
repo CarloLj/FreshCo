@@ -3,9 +3,8 @@ import ReactStars from "react-rating-stars-component";
 import ProductCard from './ProductCard';
 
 const FeedCard = ({card}) => {
-    console.log(card)
 
-    const {Nombre,Rating,Productos} = card
+    const {Nombre,Rating,Productos,parcelaId} = card
     console.log(card)
 
     const listProducts = Productos.map((producto) => {
@@ -13,12 +12,14 @@ const FeedCard = ({card}) => {
             <div key={producto["Nombre"]} className='m-2 inline-block'>
                 <center>
                     <ProductCard
-                    Nombre={producto["Nombre"]}
-                    Precio={producto["Precio"]}
-                    ImagenUrl={producto["ImagenUrl"]}
-                    Descripcion={producto["Descripcion"]}
-                    CantidadPrecioKilos={producto["CantidadPrecioKilos"]}
-                    CantidadExistenteKilos={producto["CantidadExistenteKilos"]} />
+                        Nombre={producto["Nombre"]}
+                        Precio={producto["Precio"]}
+                        ImagenUrl={producto["ImagenUrl"]}
+                        Descripcion={producto["Descripcion"]}
+                        CantidadPrecioKilos={producto["CantidadPrecioKilos"]}
+                        CantidadExistenteKilos={producto["CantidadExistenteKilos"]} 
+                        IdParcela={parcelaId}
+                    />
                 </center>
                 
             </div>
