@@ -66,7 +66,7 @@ app.get("/getVendedores", (req,res) => {
                 data[i]["parcela"]["Productos"] = clearNullProduct;
             }
                 
-            res.json({data:data});
+            res.json({message:data});
         });
 
     }catch (error) {
