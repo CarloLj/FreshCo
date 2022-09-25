@@ -1,29 +1,31 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import "../Pages/Feed.css";
+import "../Pages/Details.css"
+
 
 export default function ProductCard({
   Nombre,
   Locacion,
   ImagenUrl,
   Descripcion,
+  Rating
 }) 
 
 {
   return (
-    <div className="max-w-sm">
-  <Card
-    horizontal={true}
-    imgSrc="https://flowbite.com/docs/images/blog/image-4.jpg"
-  >
-    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-      Noteworthy technology acquisitions 2021
-    </h5>
-    <p className="font-normal text-gray-700 dark:text-gray-400">
-      Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-    </p>
-  </Card>
-</div>
+    <div>
+        
+        <img src={ImagenUrl} alt="PlaceHolder" className="ImgPlot"></img>
+            <div className="cardProduct">
+                <h2>{Nombre}</h2>
+                <h4>{Locacion}</h4>
+                <h6>{Descripcion}</h6>
+                <div className="rating">
+                    <h6 className="a">Rating </h6>
+                    <h6 className="b">{Rating} / 5</h6>
+                </div>
+            </div>
+    </div>
+    
   );
 }
