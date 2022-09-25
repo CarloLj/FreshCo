@@ -1,7 +1,10 @@
+import React, { useState } from 'react';
 import Parcela from "../Components/Parcela.js";
 import ProductCard from "../Components/ProductCard.js";
+import LocationComponent from "../Components/LocationComponent"
 
 function BasicExample() {
+  const [value, setValue] = useState(null);
   return (
     <div>
       <ProductCard
@@ -12,6 +15,7 @@ function BasicExample() {
         CantidadPrecioKilos="1"
         CantidadExistenteKilos="100"
       />
+      <LocationComponent value={value} setValue={setValue}/>
     </div>
   );
 }
