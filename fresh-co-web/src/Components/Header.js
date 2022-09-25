@@ -17,10 +17,10 @@ const Header = () => {
                     <NavLink to='/' style={{textDecoration: 'none', color: '#4F4F4F'}}>Inicio</NavLink>
                     </div>
                     <div style={{fontFamily: "Poppins", marginRight: '10px'}}>
-                    <NavLink to='/' style={{textDecoration: 'none', color: '#4F4F4F'}}>Comestibles</NavLink>
+                    <NavLink to='/Feed' style={{textDecoration: 'none', color: '#4F4F4F'}}>Comestibles</NavLink>
                     </div>
                     <div style={{fontFamily: "Poppins", marginRight: '10px'}}>
-                    <NavLink to='/' style={{textDecoration: 'none', color: '#4F4F4F'}}>Como funciona?</NavLink>
+                    <NavLink to='/About' style={{textDecoration: 'none', color: '#4F4F4F'}}>Como funciona?</NavLink>
                     </div>
                     <button className='button-header'>Log out</button>
                 </div>
